@@ -67,7 +67,7 @@ export class Juego{
             else{
                 this.juegoPerdido();
             }
-        },50);
+        },500);
     }
         juegoGanado(){
             document.getElementById("titulo").innerHTML = "Has ganado!";
@@ -117,7 +117,7 @@ export class Juego{
                 this.puedeDisparar = false;
                 setTimeout(()=>{
                     this.puedeDisparar = true;
-                },100);
+                },1500);
                 let intervalo = setInterval(()=>{
                     this.posicion -= 5;
                     if(bala.getPosY() < 0){
